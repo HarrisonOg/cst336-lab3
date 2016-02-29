@@ -5,13 +5,13 @@ $card = ["image" => "",
             "rank" => ""];
             
     
-    $player1 = ["imageName" => "<img src="assets/pic1.jpg" width="46" height="46">",
+    $player1 = ["imageName" => "<img src=\"assets/pic1.jpg\" width=\"46\" height=\"46\">",
               "name" => $_POST["p1"]];
-    $player2 = ["imageName" => "<img src="assets/pic2.jpg" width="46" height="46">",
+    $player2 = ["imageName" => "<img src=\"assets/pic2.jpg\" width=\"46\" height=\"46\">",
               "name" => $_POST["p2"]];
-    $player3 = ["imageName" => "<img src="assets/pic3.jpg" width="46" height="46">",
+    $player3 = ["imageName" => "<img src=\"assets/pic3.jpg\" width=\"46\" height=\"46\">",
               "name" => $_POST["p3"]];
-    $player4 = ["imageName" => "<img src="assets/pic4.jpg" width="46" height="46">",
+    $player4 = ["imageName" => "<img src=\"assets/pic4.jpg\" width=\"46\" height=\"46\">",
               "name" => $_POST["p4"]];
               
     $table = [$player1,$player2,$player3,$player4];

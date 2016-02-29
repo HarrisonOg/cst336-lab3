@@ -1,5 +1,27 @@
-<!DOCTYPE html>
 <?php
+$card = ["image" => "",
+            "score" => "",
+            "suit" => "",
+            "rank" => ""];
+            
+    $deck = [];
+    
+    $player1 = ["imageName" => "",
+              "name" => $_POST["p1"]];
+    $player2 = ["imageName" => "",
+              "name" => $_POST["p2"]];
+    $player3 = ["imageName" => "",
+              "name" => $_POST["p3"]];
+    $player4 = ["imageName" => "",
+              "name" => $_POST["p4"]];
+              
+    $table = [$player1,$player2,$player3,$player4];
+    
+    $hand = ["player" => null,
+            "cards" => []];
+            
+    $game = ["location", $table, 
+            "hands" => []];
 
 $deck = array();
 	for ($i=0; $i < 52; $i++){
@@ -200,6 +222,7 @@ function drawGame(){
           "hands" => []];
   */
  ?>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -213,29 +236,7 @@ function drawGame(){
 
 </body>
 </html><?php
-    $card = ["image" => "",
-            "score" => "",
-            "suit" => "",
-            "rank" => ""];
-            
-    $deck = [];
-    
-    $player1 = ["imageName" => "",
-              "name" => ""];
-    $player2 = ["imageName" => "",
-              "name" => ""];
-    $player3 = ["imageName" => "",
-              "name" => ""];
-    $player4 = ["imageName" => "",
-              "name" => ""];
-              
-    $table = [$player1,$player2,$player3,$player4];
-    
-    $hand = ["player" => null,
-            "cards" => []];
-            
-    $game = ["location", $table, 
-            "hands" => []];
+    startGame();
 ?>
 <html>
 <head>
